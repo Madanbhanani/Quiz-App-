@@ -71,21 +71,36 @@ function nextQuestion(){
 nextQuestion();
 
 function CheckFinalRes(){
+
+  var m=document.getElementById("AnswerBtn");
+  m.style.display="none"
+  console.log(m)
+
+  document.getElementById("cardConntainer").style.display="block"
    var persentageTotal=(score/ArrOfQuestion.length)*100;
    var FinalPer=Math.floor(persentageTotal)
 
     if(FinalPer > 90 && FinalPer <= 100){
-      document.getElementById("Answershow").innerHTML=`Full Scholarship persentage = ${FinalPer}% <br /> Currect Question ${score}<br /> Total Question ${ArrOfQuestion.length}`;
+      document.getElementById("Scholarship").innerHTML=`Full Scholarship`;
+      document.getElementById("CurrectQ").innerHTML=score;
+      document.getElementById("TotalQ").innerHTML=ArrOfQuestion.length;
+      document.getElementById("persentage").innerHTML=`${FinalPer}%`;
     }
     else if(FinalPer > 75 && FinalPer <= 90){
-      document.getElementById("Answershow").innerHTML=`Half Scholarship persentage = ${FinalPer}% <br /> Currect Question ${score}<br /> Total Question ${ArrOfQuestion.length}`;
-    }
+      document.getElementById("Scholarship").innerHTML=`Half Scholarship`;
+      document.getElementById("CurrectQ").innerHTML=score;
+      document.getElementById("TotalQ").innerHTML=ArrOfQuestion.length;
+      document.getElementById("persentage").innerHTML=`${FinalPer}%`;    }
     else if(FinalPer > 60 && FinalPer <= 75){
-      document.getElementById("Answershow").innerHTML=`Quarter Scholarship persentage = ${FinalPer}% <br /> Currect Question ${score}<br /> Total Question ${ArrOfQuestion.length}`;
-    }
+      document.getElementById("Scholarship").innerHTML=`Quatar Scholarship`;
+      document.getElementById("CurrectQ").innerHTML=score;
+      document.getElementById("TotalQ").innerHTML=ArrOfQuestion.length;
+      document.getElementById("persentage").innerHTML=`${FinalPer}%`;    }
     else{
-      document.getElementById("Answershow").innerHTML=`No Scholarship  persentage = ${FinalPer}% <br /> Currect Question ${score}<br /> Total Question ${ArrOfQuestion.length}`;
-    }
+      document.getElementById("Scholarship").innerHTML=`No Scholarship`;
+      document.getElementById("CurrectQ").innerHTML=score;
+      document.getElementById("TotalQ").innerHTML=ArrOfQuestion.length;
+      document.getElementById("persentage").innerHTML=`${FinalPer}%`;    }
 }
 
 

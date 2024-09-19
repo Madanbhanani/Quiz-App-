@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>test Quiz aap</title>
      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-<p>
-    <p id="QuestionNo"> Question 
-    <span id="saveQ"></span></p>
-</p>
-
-<input type="text" id="input" > 
-
-<input type="submit" id="submit" onclick="submitData()">
-
- <br><br>
  
-<button onclick="nextQuestion()" disabled id="Next">Next</button>
+    <div id="SectonQuiz">
+           
+     <p>
+       <p id="QuestionNo"> Question 
+        <span id="saveQ"></span></p>
+     </p>
+     <input type="text" id="input" > 
+     <input type="submit" id="submit" onclick="submitData()">
+      <br /><br />
+     <button onclick="nextQuestion()" disabled id="Next">Next</button>
 
-<p id="Answershow">
-    <button id="AnswerBtn" onclick="CheckFinalRes()">Check Your Final Results</button>
-</p>
-<p id="Marks"></p>
+    <p id="Answershow">
+       <button id="AnswerBtn" onclick="CheckFinalRes()">Check Your Final Results</button>
+      </p>
+     <p id="Marks">
+         
+     </p>
+    
+       <div id="cardConntainer">
+         <div class="parent">
+            <P>Scholarship </P>
+            <P id="Scholarship"></P>
+         </div>
+         <div class="parent">
+            <P>Currect Question</P>
+            <P id="CurrectQ"></P>
+         </div>
+         <div class="parent">
+            <P>Total Question</P>
+            <P id="TotalQ"></P>
+         </div>
+         <div class="parent">
+            <P>persentage </P>
+            <P id="persentage"></P>
+         </div>
+       </div>
+
+    </div>
 
 
 </body>

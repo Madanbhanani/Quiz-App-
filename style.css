@@ -1,16 +1,31 @@
+
 body{
-    text-align: center;       
+    text-align: center; 
+    background-color: rgb(186, 192, 180);  
+    height: 100vh;
+    align-items: center;
+    display: flex;    
+ }
+
+ #SectonQuiz{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    min-height: 500px;
+   padding-top: 60px;
+   border-radius: 10px;
+   min-width: 250px;
  }
 
 
  #Answershow{
       width: 40%;
       margin: auto;
-      margin-top: 10px;
       display: flex;
       justify-content: center;
       font-size: 20px;
       font-weight: bold;
+      
  }
  #AnswerBtn{
      padding: 10px;
@@ -20,7 +35,7 @@ body{
      color: white;
      border-radius: 4px;
      border: none;
-
+     cursor: pointer;
  }
  #Next{
      padding: 10px;
@@ -28,6 +43,7 @@ body{
      border: 2px solid;
      border-radius: 4px;
      font-weight: bold;
+     cursor: pointer;
 
  }
  #submit{
@@ -35,6 +51,7 @@ body{
      border: 2px solid;
      border-radius: 4px;
      font-weight: bold;
+     cursor: pointer;
  }
  #input{
      padding: 10px;
@@ -45,8 +62,7 @@ body{
 
  #QuestionNo{
      color: red;
-     border: 2px solid black;
-     width: 50%;
+     width: 80%;
      margin: 40px auto 40px auto;
      padding: 20px;
      border-radius: 4px;
@@ -59,7 +75,7 @@ body{
      color: black;
  }
  #QuizFinished{
-     color: rgb(255, 255, 255);
+     color: rgb(241, 0, 0);
      width: 50%;
      margin: 40px auto 40px auto;
      padding-top: 20px;
@@ -68,5 +84,51 @@ body{
      font-size: 27px;
      font-weight: bold;
      min-height: 50px;
-     background: linear-gradient(black,rgb(130, 134, 130),red,rgb(129, 129, 106),rgb(148, 138, 119));
  }
+ #cardConntainer{
+    display: none;
+ }
+
+ /*_________ table final result Section _______*/
+
+
+
+#cardConntainer{
+     height: 200px;
+     width: 200px;
+     margin: auto;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid;
+}
+.parent p{
+    font-weight: bold;
+    color: rgb(214, 43, 0);
+}
+
+#CurrectQ{
+    color: black;
+}
+#TotalQ{
+    color: black;
+}
+#persentage{
+    color: black;
+}
+
+
+@media (max-width:500px) {
+     #SectonQuiz{
+        min-height: 700px;
+        min-width: 300px;
+     }
+     #submit{
+        margin-top: 10px;
+     }
+     #SectonQuiz{
+        width: 90%;
+     }
+}
